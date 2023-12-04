@@ -2,6 +2,13 @@ const numbers = [2, 50, 8, 10, 4, 20, 3, 7, 0, 6, 90, 2, 8, 10, 50, 3, 7, 4, 6, 
 const resultNumbers = Array.from(new Set(numbers))
 
 console.log(resultNumbers)
+const numbers = [13,23,1,23,12,3,65,78,89,89,7,5,3,213,13,13]
+// const resultNumbers = Array.from(numbers)
+let newArr = []
+
+for (const item of numbers) !newArr.includes(item) && newArr.push(item)
+console.log(newArr)
+// это правильный вариант того как нужно было удалять дубликаты
 
 
 
